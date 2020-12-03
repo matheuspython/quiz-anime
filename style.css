@@ -8,3 +8,83 @@ html,
 body {
     height: 100%;
 }
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    width: 90%;
+    margin: 4px auto;
+    max-width: 700px;
+}
+
+img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: #cccccc;
+    width: 48%;
+    height: 300px;
+}
+
+.boxleft {
+    float: left;
+}
+
+.boxright {
+    float: right;
+}
+
+ul {
+    width: 90%;
+    margin: 4px auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+li {
+    list-style-type: upper-alpha;
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 8px;
+    border: 1px solid;
+    transition: .4s;
+}
+
+li:hover {
+    font-size: 20px;
+    background: rgb(226, 158, 158);
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    border: 0;
+    padding: 20px 40px;
+    margin: 5px auto;
+    background-color: aqua;
+    transition: .4s;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    font-size: 20px;
+    padding: 25px 45px;
+}
