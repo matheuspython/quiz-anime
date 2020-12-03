@@ -36,16 +36,27 @@ function remove() {
     lista.removeChild(removedor[0])
     lista.removeChild(removedor[1])
 }
+listaImagemCounter = 0
+listaImagem = ['/rasengan-image.jpg', '/rasengan-image2.jpg', '/luffy.jpg', 'luffy1.jpg']
+
+
+listaPerguntas = ['rasengan', 'chidori', 'chapeu de palha', 'menino louco']
+
+perguntasP = ['qual o nome desse jutsu?', 'qual o apelido do luffy?']
+listaPCounter = 0
 
 function clique(argumento) {
-
+    if (listaPCounter == 2) {
+        alert('parabens')
+        return
+    }
     if (argumento == 0) {
 
-        mudaP('qual o nome desse jutsu')
-        img1.src = '/rasengan-image.jpg'
-        img2.src = '/rasengan-image2.jpg'
+        mudaP(perguntasP[listaPCounter])
+        img1.src = listaImagem[listaImagemCounter]
+        img2.src = listaImagem[listaImagemCounter + 1]
         remove()
-        perguntas('rasengan', 'chidori')
+        perguntas(listaPerguntas[listaImagemCounter], listaPerguntas[listaImagemCounter + 1])
 
     }
 
@@ -55,6 +66,8 @@ function clique(argumento) {
     if (argumento == 1) {
         alert('errou')
     }
+    listaPCounter++
+    listaImagemCounter += 2
 }
 
 
